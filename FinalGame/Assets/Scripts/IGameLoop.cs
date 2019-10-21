@@ -12,9 +12,13 @@ public class IGameLoop : MonoBehaviour
         var game = FindObjectOfType<Game>();
         game.instance.AddGameLoop(this);
     }
-    public void CustomUpdate()
+    public void CustomStart()
     {
         _sceneTwo = GameObject.Find(objectName);
+    }
+    public void CustomUpdate()
+    {
+
     }
 }
     

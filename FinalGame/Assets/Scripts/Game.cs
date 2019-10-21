@@ -21,6 +21,21 @@ public class Game : MonoBehaviour
         SceneManager.LoadScene("AdditiveScene2", LoadSceneMode.Additive);
     }
 
+    private void Start()
+    {
+        try
+        {
+            if (!inErrorState)
+                foreach (var gameLoop in GameLoops)
+                    gameLoop.CustomStart();
+        }
+        catch (System.Exception e)
+        {
+            HandleGameLoopException(e);
+            throw;
+        }
+    }
+
     void Update()
     {
         try

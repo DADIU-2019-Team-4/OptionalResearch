@@ -669,7 +669,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Game.cs" />
+    <Compile Include="Assets\Scripts\CreateAssetBundles.cs" />
+    <Compile Include="Assets\Scripts\DraggablePoint.cs" />
+    <Compile Include="Assets\Scripts\ExampleBehavior.cs" />
+    <Compile Include="Assets\Scripts\Game.cs" />
+    <Compile Include="Assets\Scripts\IGameLoop.cs" />
+    <Compile Include="Assets\Scripts\LoadResources.cs" />
+    <Compile Include="Assets\Scripts\PrefabWindow.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
   </ItemGroup>
